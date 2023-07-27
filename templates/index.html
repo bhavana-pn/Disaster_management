@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+     <style>
+        img{
+            opacity: 0.5;
+        }
+    </style> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href={{url_for('static',filename='style.css')}}>
+    <title>ForestFire</title>
+
+</head>
+
+<body>
+    <img src="{{url_for('static', filename='ff.jpg')}}"class ="img-fluid" align="middle" width ="1550" height ="750"/> 
+    <div class ="split top">
+    <div class = "title">
+        <h1>Forest fire Prediction using machine learning </h1>
+    </div>
+</div>
+   <div class = "split bottom">
+    <div class = "content"> 
+        <p> {{content}} </p>      
+         
+    </div>
+</div>
+
+
+</body>
+</html>
